@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tender Legends School - Lagos</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Outfit',sans-serif}</style>
+</head>
+<body class="bg-[#FFFEFB] antialiased">
+<!-- NAV --> <!-- NAV - MOBILE MENU FIXED -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 h-[72px] flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex gap-3 items-center">
+      <div class="w-10 h-10 bg-[#5B2CB4] rounded-xl text-white flex items-center justify-center font-bold text-[13px]">TL</div>
+      <div>
+        <h1 class="font-extrabold text-[15px] leading-none">Tender Legends School</h1>
+        <p class="text-[11px] text-gray-500 mt-[2px]">Nursery • Primary • Lagos</p>
+      </div>
+    </div>
+
+    <!-- Desktop links (hidden on phone) -->
+    <div class="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-600">
+      <a href="#" class="text-black font-semibold">Home</a>
+      <a href="#" class="hover:text-black">News</a>
+      <a href="#" class="hover:text-black">Gallery</a>
+    </div>
+
+    <!-- Desktop Enroll (hidden on phone) -->
+    <a href="https://wa.me/2348183622070" class="hidden md:inline-flex bg-[#FFD84D] hover:bg-[#FFE27A] px-5 py-2.5 rounded-full font-semibold text-[13px] text-black transition">Enroll Now</a>
+
+    <!-- MOBILE: Hamburger (shows only on phone) -->
+    <button id="menuBtn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <!-- MOBILE POPUP MENU -->
+  <div id="mobileMenu" class="hidden md:hidden absolute top-[72px] left-0 w-full bg-white border-b shadow-xl">
+    <div class="px-6 py-6 flex flex-col gap-4">
+      <a href="#" class="text-[15px] font-semibold text-black py-2 border-b border-gray-100">Home</a>
+      <a href="#" class="text-[15px] font-medium text-gray-600 py-2 border-b border-gray-100">News</a>
+      <a href="#" class="text-[15px] font-medium text-gray-600 py-2 border-b border-gray-100">Gallery</a>
+      <a href="https://wa.me/2348183622070" class="mt-2 bg-[#FFD84D] text-black px-5 py-3 rounded-full font-bold text-[14px] text-center">Enroll Now</a>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  let open = false;
+  btn.addEventListener('click', () => {
+    open = !open;
+    menu.classList.toggle('hidden', !open);
+    // change icon to X when open
+    btn.innerHTML = open 
+      ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
+      : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+  });
+</script>
+<section class="bg-gradient-to-br from-[#EDE7FF] to-[#FFF7D6] px-6 lg:px-8 py-12 lg:py-20"><div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center"><div><span class="bg-[#FFF2B2] text-[11px] font-bold px-3 py-1.5 rounded-full">Now Enrolling 2024/2025</span><h1 class="text-[32px] lg:text-[52px] font-extrabold leading-[0.9] mt-5">Nurturing Young Legends for a Bright Future</h1><p class="mt-5 text-[14px] text-gray-600 max-w-[480px]">Safe, fun, excellent learning environment for nursery and primary pupils. Academic excellence + character development.</p><div class="mt-7 flex flex-wrap gap-3"><a href="https://wa.me/2348183622070" class="bg-[#5B2CB4] text-white px-6 py-3 rounded-full font-semibold text-[13px]">Book a School Tour →</a><a href="#" class="border border-[#5B2CB4] text-[#5B2CB4] px-6 py-3 rounded-full font-semibold text-[13px]">Download Prospectus</a></div></div><div class="bg-white p-2.5 rounded-[24px] shadow-2xl mx-auto w-full max-w-[560px]"><img src="tender/school.jpg" alt="Tender Legends classroom" class="w-full h-[320px] lg:h-[400px] object-cover rounded-[18px] block"></div></div></section>
+<!-- rest of your sections stay same as your current file -->
+
+
+<section class="border-y border-gray-100 bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 lg:grid-cols-6 gap-4 text-[12px] font-medium">
+    <span>✅ Lagos State Approved</span>
+    <span>🛡️ CCTV & Safe Pickup</span>
+    <span>👩‍🏫 Qualified Teachers</span>
+    <span>📚 Small Class Sizes</span>
+    <span>💻 ICT & Coding</span>
+    <span>⭐ 4.9 Parent Rating</span>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12">
+  <div>
+    <p class="text-[#5B2CB4] font-bold text-[12px] tracking-widest">ABOUT US</p>
+    <h2 class="text-[32px] font-extrabold leading-[1.05] mt-2">We Build Strong Foundations That Last a Lifetime</h2>
+    <p class="mt-4 text-[14px] text-gray-600">Tender Legends started in 2018. We blend Nigerian curriculum with Montessori.</p>
+    <div class="mt-6 grid grid-cols-3 gap-6 border-t pt-6">
+      <div><p class="text-[28px] font-extrabold">200+</p><p class="text-[11px] text-gray-500">Happy Pupils</p></div>
+      <div><p class="text-[28px] font-extrabold">15+</p><p class="text-[11px] text-gray-500">Teachers</p></div>
+      <div><p class="text-[28px] font-extrabold">6</p><p class="text-[11px] text-gray-500">Years</p></div>
+    </div>
+  </div>
+  <div class="bg-[#F8F5FF] rounded-[20px] p-6">
+    <h3 class="font-bold">What Makes Us Different?</h3>
+    <ul class="mt-4 space-y-3 text-[13px]">
+      <li>✓ Montessori + Nigerian Curriculum</li>
+      <li>✓ Phonics, Coding, Music, Arts</li>
+      <li>✓ Affordable Fees, Flexible Payment</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-[#2D115F] text-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-[28px] font-extrabold">Our Programs</h2>
+    <div class="mt-8 grid md:grid-cols-2 gap-5">
+      <div class="bg-white text-black rounded-[18px] p-6">
+        <h3 class="font-bold text-[18px]">🧒 Nursery School</h3>
+        <p class="text-[13px] mt-2">Ages 2-5 • Play-based, Phonics, Art & Music</p>
+      </div>
+      <div class="bg-[#5B2CB4] rounded-[18px] p-6 border border-white/10">
+        <h3 class="font-bold text-[18px]">📚 Primary School</h3>
+        <p class="text-[13px] mt-2 text-white/80">Primary 1-6 • Common Entrance prep + ICT & Coding</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-12">
+  <div class="bg-[#FFD84D] rounded-[24px] p-8 flex flex-col lg:flex-row justify-between items-center gap-6">
+    <h2 class="text-[24px] font-extrabold">Ready to Join the Legends Family?</h2>
+    <a href="https://wa.me/234..." class="bg-black text-white px-6 py-3 rounded-full text-[13px] font-semibold">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER - Using only your Webflow info -->
+<footer class="bg-[#1A0D33] text-white">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    
+    <div class="grid md:grid-cols-4 gap-8">
+      
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-[#5B2CB4] rounded-lg flex items-center justify-center font-bold text-[12px]">TL</div>
+          <p class="font-bold text-[14px]">Tender Legends School</p>
+        </div>
+        <p class="text-[12px] text-white/50 mt-3 leading-5">
+          35 Ondo St, Lagos Mainland,<br>
+          Lagos 101245, Lagos
+        </p>
+        <p class="text-[12px] mt-3 text-white/70">Phone: +2348183622070</p>
+      </div>
+
+      <!-- School -->
+      <div>
+        <h4 class="font-bold text-[13px]">School</h4>
+        <ul class="mt-3 space-y-2 text-[13px] text-white/60">
+          <li><a href="#" class="hover:text-white">Academics</a></li>
+          <li><a href="#" class="hover:text-white">Admissions</a></li>
+          <li><a href="#" class="hover:text-white">News & Events</a></li>
+          <li><a href="#" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h4 class="font-bold text-[13px]">Connect</h4>
+        <ul class="mt-3 space-y-2 text-[13px] text-white/60">
+          <a href="https://www.instagram.com/explore/locations/1519004885065400/tender-legend-schools/nearby/" target="_blank" class="hover:text-white">
+  Instagram
+</a><br>
+      <a href="https://web.facebook.com/thelegendschools/?_rdc=1&_rdr#" target="_blank" class="hover:text-white">
+  facebook
+</a>
+        </ul>
+        <a href="#" class="mt-6 inline-block bg-[#FFD84D] text-black px-5 py-2 rounded-full text-[12px] font-bold">Enroll Today</a>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="font-bold text-[13px] text-white/40">Legal</h4>
+        <ul class="mt-3 space-y-2 text-[13px] text-white/60">
+          <li><a href="#" class="hover:text-white">Licenses</a></li>
+          <li><a href="#" class="hover:text-white">Changelog</a></li>
+          <li><a href="#" class="hover:text-white">Style Guide</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
+      <p class="text-[11px] text-white/40">© 2024, Tender Legends School. All rights reserved.</p>
+      <p class="text-[11px] text-white/40">35 Ondo St, Lagos Mainland</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
